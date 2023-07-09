@@ -4,4 +4,4 @@ HLS Multiview is a simple interface for viewing one or more HLS streams. It curr
 
 It's written in Angular as I plan to add features that will need to make use of Angular's state management and reactivity if I get round to it.
 
-I use this to view CCTV feeds from multiple cameras with the help of [MediaMTX](https://github.com/bluenviron/mediamtx).
+I use this to view my home CCTV feeds from multiple cameras with the help of [MediaMTX](https://github.com/bluenviron/mediamtx).
