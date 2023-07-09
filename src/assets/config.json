@@ -1,0 +1,21 @@
+{
+  "streams": [
+    {
+      "id": "Camera 1",
+      "hlsAddress": "placeholder"
+    },
+    {
+      "id": "Camera 2",
+      "hlsAddress": "placeholder"
+    },
+    {
+      "id": "Camera 3",
+      "hlsAddress": "placeholder"
+    },
+    {
+      "id": "Camera 4",
+      "hlsAddress": "placeholder"
+    }
+  ],
+  "view": "2x2"
+}

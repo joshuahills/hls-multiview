@@ -1,0 +1,13 @@
+<div [ngSwitch]="view">
+  <ng-container *ngSwitchCase="View.OneByOne">
+    <multiview-video
+      [stream]="streamsConfig[0]"
+    />
+  </ng-container>
+  <div class="multiview" *ngSwitchCase="View.TwoByTwo">
+    <multiview-video
+      *ngFor="let stream of streamsConfig"
+      [stream]="stream"
+    />
+  </div>
+</div>
