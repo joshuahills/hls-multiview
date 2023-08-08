@@ -37,9 +37,13 @@ export class VideoComponent implements AfterViewInit {
 
       hls.loadSource(this.stream.hlsAddress);
       hls.attachMedia(this.videoEl.nativeElement);
-      this.videoEl.nativeElement.controls = true;
-      this.videoEl.nativeElement.muted = true;
-      this.videoEl.nativeElement.play();
+    } else if (this.videoEl.nativeElement.canPlayType('application/vnd.apple.mpegurl')) {
+      console.log('HLS.js not supported, falling back to native HLS support');
+      this.videoEl.nativeElement.src = this.stream.hlsAddress;
     }
+
+    this.videoEl.nativeElement.controls = true;
+    this.videoEl.nativeElement.muted = true;
+    this.videoEl.nativeElement.play();
   };
 }
